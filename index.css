@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    height: 100vh;
+}
+.box{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(22, 21, 17, 0.671), rgba(29, 26, 15, 0.808)), url('Images/body.jpg');
+
+}
+li{
+    list-style: none;
+
+}
+/*  */
+header{
+    position: sticky;
+    z-index: 99;
+    top: 0;
+
+    background-color: #1c1c1cc9;
+    height: 150px;
+    padding: 0 10px;
+}
+
+.section-reseau{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+}
+.reseau .fab{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.reseau a:not(:first-child){
+ margin-left: 20px;
+}
+.box-checking input{
+    border: 1px solid ;
+    padding: 5px;
+    border-radius: 3px;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.box-checking input:focus{
+    border: 1px solid rgb(255, 196, 0);
+    color: orange;
+    outline: none;
+}
+.box-checking button{
+    border: none;
+    padding: 5px;
+    background-color: rgb(211, 209, 209);
+    border-radius: 2px;
+    color: #333;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 16px;
+   
+}
+marquee{
+    margin: 10px 0;
+    color: orange;
+    font-size: 15px;
+    font-style: italic;
+}
+marquee span{
+    margin-right: 50px;
+}
+nav{
+    margin-top: 10px;
+    display: flex;
+    padding: 0 10px;
+   align-items: center;
+ 
+    justify-content: space-between;
+}
+nav a{
+    color: #fff;
+    font-size: 25px;
+    
+}
+
+nav a span:nth-child(1){
+    color: orange;
+    
+}
+nav a span:nth-child(2){
+    color: rgb(0, 255, 34);
+    
+}
+nav a span:nth-child(3){
+    color: rgb(0, 225, 255);
+    
+}
+nav a span:nth-child(5){
+    color: rgb(195, 0, 255);
+    
+}
+nav a span:nth-child(6){
+    color: rgb(255, 60, 0);
+    
+}
+.nav-item{
+    display: flex;
+    gap: 5vw;
+}
+.nav-item li a{
+   color: #fff;
+   font-size: 17px;
+   font-size: 900;
+   position: relative;
+}
+.nav-item li a::after{
+    content: '';
+    width: 0;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    transition: width 0.3s ease;
+    background-color: orange;
+}
+.nav-item li a:hover::after{
+    width: 100%;
+}
+
+.banner{
+    position: relative;
+    text-align: center;
+    background-color: #cccccc00;
+}
+.banner img{
+    width: 150px;
+   
+    
+}
+.banner h1{
+    color: #fff;
+    font-size: 30px;
+   
+    
+}
+.banner .label-box input{
+    width: 200px;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 5px 0 0 5px;  
+    border: none;
+    
+}
+.banner .label-box button{
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 0px 5px 5px 0;  
+    margin: 0;
+    border: none;
+    background-color:orange;
+    
+}
+.banner p{
+font-style: italic;  
+color: #d4d3d3;
+font-size: 16px;
+
+}
+
+  
+ 
+  
+  .earth {
+    animation: 
+      rotateY 24s linear infinite,
+      float 5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes float {
+    from { transform: translateY(-5px); }
+    to { transform: translateY(5px); }
+  }
+  .grid{
+    background-color: #fff;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-around;
+/*     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+ */  }
+ .box-grid{
+    width: 200px;
+    padding: 20px 0;
+    text-align: center;
+    border: 2px solid #ccc;
+ }
+ main{
+    min-height: 100vh;
+ }
+ footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #1c1c1cc9;
+    height: 50px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+}
